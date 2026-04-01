@@ -22,7 +22,7 @@ function Profile () {
       const fetchUsers = async () =>{
          try {
             const token =  localStorage.getItem('token')
-            const res = await axios.get(`http://localhost:5000/api/users/profile`, {
+            const res = await axios.get(`https://event-planner-backend-mu.vercel.app/api/users/profile`, {
                 headers: {
                 Authorization: `Bearer ${token}`
                 }
@@ -41,7 +41,7 @@ function Profile () {
     const onSubmit = async (data) => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.put(`http://localhost:5000/api/users/profile`, data, {
+            const res = await axios.put(`https://event-planner-backend-mu.vercel.app/api/users/profile`, data, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
