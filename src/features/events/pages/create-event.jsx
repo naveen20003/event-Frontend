@@ -55,11 +55,8 @@ const formSchema = z.object({
   }),
    eventsettings: z.string().min(1, {
     message: "event settings is required"
-   }),
-   guests: z.array(z.string()).min(1, {
-    message: "guests is required"
-  })
-})
+   })
+});
 
 
 function CreateEvent() {
@@ -80,7 +77,6 @@ const navigate = useNavigate();
                 eventtheme: "",
                 guestcount: "",
                 eventsettings: "",
-                guests: ""
                 }
   })
 
@@ -308,6 +304,7 @@ useEffect( ()  =>  {
                                         )}
                                         />
                                 </Field>
+                              {/*
                                 <FieldLabel className='ml-1 w-full text-zinc-500 border rounded-md'>Select Guests...</FieldLabel>
                                <ScrollArea>
                                 <Field>
@@ -349,7 +346,8 @@ useEffect( ()  =>  {
                                     />
                                 </Field>
                                 <ScrollBar orientation="vertical" />
-                                </ScrollArea>                                                                         
+                                </ScrollArea> 
+                                */}
                             </FieldGroup>
                         </FieldSet>
                         <Field orientation="horizontal">
