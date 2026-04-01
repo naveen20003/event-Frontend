@@ -35,7 +35,7 @@ function Budegting() {
   const readBudget = async () =>  {
      try {
        const token = localStorage.getItem('token')
-       const rdedbudget = await axios.get('http://localhost:5000/api/budgets',
+       const rdedbudget = await axios.get('https://event-planner-backend-mu.vercel.app/api/budgets',
         {
           headers: {
             Authorization: `bearer ${token}`
@@ -55,7 +55,7 @@ function Budegting() {
   const deleteBudget =   async (id)=>{
      try {
        const token = localStorage.getItem("token");
-       const deletedbudget = await axios.delete(`http://localhost:5000/api/budgets/${id}`,
+       const deletedbudget = await axios.delete(`https://event-planner-backend-mu.vercel.app/api/budgets/${id}`,
         {
           headers: {
             Authorization: `beareer ${token}`
