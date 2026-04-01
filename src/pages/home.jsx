@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 import EventHome from '../assets/icons/eventhome.jpg'
 import AppleLogo from '../assets/icons/applelogo.png'
@@ -131,6 +132,8 @@ const ReviewsCardData =
 ]
 
 function Home() {
+ const navigate = useNavigate();
+
   return (
     <div className="sm:p-5 relative">
       <div className="w-full h-[700px] p-4 grid grid-cols-1 sm:grid-cols-2 sm:h-[500px] ">
@@ -139,10 +142,10 @@ function Home() {
             Manage and plan your event like never before
           </div>
           <div className="flex justify-center items-start mr-17 gap-6 sm:justify-start">
-            <Button variant="outline"  size="" className='border'>
+            <Button variant="outline"  size="" className='border' onClick={()=> navigate("/login")}>
               Log in
             </Button>
-            <Button className='bg-sky-700'>
+            <Button className='bg-sky-700' onClick={()=> navigate("/register")}>
               Sign Up
             </Button>
           </div>
