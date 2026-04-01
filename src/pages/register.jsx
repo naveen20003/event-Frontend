@@ -61,7 +61,7 @@ function Register() {
          })
          const onSubmit = async (data) => {
            try {
-              await axios.post('https://event-planner-backend-mu.vercel.app/createuser', data);
+              await axios.post('https://event-planner-backend-mu.vercel.app/register', data);
               navigate('/login')
            } catch (error) {
              if (error.response) {
