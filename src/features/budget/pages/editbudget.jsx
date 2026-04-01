@@ -64,7 +64,7 @@ function UpdateBudget() {
        const fetchBudgets = async () =>{
         try {
             const  token = localStorage.getItem('token')
-            const updbudget = await axios.get(`http://localhost:5000/api/budgets/${id}`,
+            const updbudget = await axios.get(`https://event-planner-backend-mu.vercel.app/api/budgets/${id}`,
                 {
                     headers: {
                         Authorization: ` bearer ${token}`
@@ -83,7 +83,7 @@ function UpdateBudget() {
      const onSubmit = async (data) => {
        try {
         const token = localStorage.getItem('token')
-         await axios.put(`http://localhost:5000/api/budgets/${id}`, data,
+         await axios.put(`https://event-planner-backend-mu.vercel.app/api/budgets/${id}`, data,
             {
                 headers: {
                     Authorization: `bearer ${token}`
