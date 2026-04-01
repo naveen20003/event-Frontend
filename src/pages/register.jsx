@@ -61,7 +61,7 @@ function Register() {
          })
          const onSubmit = async (data) => {
            try {
-              await axios.post('http://localhost:5000/createuser', data);
+              await axios.post('https://event-planner-backend-mu.vercel.app/createuser', data);
               navigate('/login')
            } catch (error) {
              if (error.response) {
