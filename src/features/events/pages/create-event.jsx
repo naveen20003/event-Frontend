@@ -88,7 +88,7 @@ useEffect( ()  =>  {
   const fetchGuest = async() => {
     try {
       const token = localStorage.getItem('token')
-      const readguest = await axios.get('http://localhost:5000/api/guests', {
+      const readguest = await axios.get('https://event-planner-backend-mu.vercel.app/api/guests', {
         headers: {
             Authorization: `bearer ${token}`
         }
@@ -103,10 +103,9 @@ useEffect( ()  =>  {
 
   //create event
   const onSubmit = async (data) => {
-    console.log(data)
      try {
     const token = localStorage.getItem("token");
-     await axios.post("http://localhost:5000/api/events", data,
+     await axios.post("https://event-planner-backend-mu.vercel.app/api/events", data,
             {
                 headers: {
                 Authorization: `Bearer ${token}`
