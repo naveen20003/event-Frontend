@@ -48,7 +48,7 @@ function TaskManagment() {
 const readTasks = ( async ()=>{
    try{
     const token = localStorage.getItem("token");
-   const rtasks = await axios.get('http://localhost:/api/tasks',
+   const rtasks = await axios.get('https://event-planner-backend-mu.vercel.app/api/tasks',
             {
                 headers: {
                 Authorization: `Bearer ${token}`
@@ -67,7 +67,7 @@ useEffect(() => {
 const deleteTask = ((id)=>{
   try{
   const token = localStorage.getItem('token');
-   axios.delete(`http://localhost:5000/api/tasks/${id}`,
+   axios.delete(`https://event-planner-backend-mu.vercel.app/api/tasks/${id}`,
     {
       headers: {
         Authorization: `bearer ${token}`
@@ -85,7 +85,7 @@ useEffect(() => {
   const searchandsort = async ()=>{
     try {
       const token = localStorage.getItem('token')
-      const res = await axios.get(`http://localhost:5000/api/tasks?search=${search}&sort=${sort}`,{
+      const res = await axios.get(`https://event-planner-backend-mu.vercel.app/api/tasks?search=${search}&sort=${sort}`,{
         headers: {
           Authorization: `bearer ${token}`
         }
