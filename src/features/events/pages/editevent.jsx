@@ -75,7 +75,7 @@ function EditEvent() {
       const fetchEvents = async () =>{
           try{
             const token = localStorage.getItem("token");
-            const res = await axios.get(`http://localhost:5000/api/events/${id}`,
+            const res = await axios.get(`https://event-planner-backend-mu.vercel.app/api/events/${id}`,
             {
                 headers: {
                 Authorization: `Bearer ${token}`
@@ -92,7 +92,7 @@ function EditEvent() {
   const onSubmit = async (data) => {
      try{
         const token = localStorage.getItem("token");
-       await axios.put(`http://localhost:5000/api/events/${id}`,data,
+       await axios.put(`https://event-planner-backend-mu.vercel.app/api/events/${id}`,data,
             {
                 headers: {
                 Authorization: `Bearer ${token}`
