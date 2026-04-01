@@ -58,7 +58,7 @@ function Eventmanagment() {
  const readEvents = async () =>{
       try {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:5000/api/events",
+    const response = await axios.get("https://event-planner-backend-mu.vercel.app/api/events",
             {
                 headers: {
                 Authorization: `Bearer ${token}`
@@ -73,7 +73,7 @@ function Eventmanagment() {
  const deleteEvents = async (id) =>{
     try {
     const token = localStorage.getItem("token");
-    await axios.delete(`http://localhost:5000/api/events/${id}`,
+    await axios.delete(`https://event-planner-backend-mu.vercel.app/api/events/${id}`,
             {
                 headers: {
                 Authorization: `Bearer ${token}`
@@ -95,7 +95,7 @@ useEffect(() => {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          `http://localhost:5000/api/events?search=${search}&sort=${sort}`,
+          `https://event-planner-backend-mu.vercel.app/api/events?search=${search}&sort=${sort}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
