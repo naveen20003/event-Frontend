@@ -73,7 +73,7 @@ function EditTask() {
         const fetchTasks =  async ()=> {
         try {
             const token = localStorage.getItem("token");
-            const ridtask = await axios.get(`http://localhost:5000/api/tasks/${id}`,
+            const ridtask = await axios.get(`https://event-planner-backend-mu.vercel.app/api/tasks/${id}`,
                     {
                         headers: {
                         Authorization: `Bearer ${token}`
@@ -92,7 +92,7 @@ function EditTask() {
     const onSubmit = async (data) => {
         try {
             const token = localStorage.getItem("token");
-            await axios.put(`http://localhost:5000/api/tasks/${id}`,data,
+            await axios.put(`https://event-planner-backend-mu.vercel.app/api/tasks/${id}`,data,
                     {
                         headers: {
                         Authorization: `Bearer ${token}`
