@@ -55,8 +55,8 @@ function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
-        //   
-        //   navigate('/')
+           
+           navigate('/')
         },
         (error) => {
           console.log('FAILED...', error.text);
