@@ -35,7 +35,7 @@ function GuestManagment() {
   const readGuest = ( async () => {
     try{
       const token = localStorage.getItem("token");
-    const res = await axios.get('http://localhost:5000/api/guests',
+    const res = await axios.get('https://event-planner-backend-mu.vercel.app/api/guests',
             {
                 headers: {
                 Authorization: `Bearer ${token}`
@@ -54,7 +54,7 @@ function GuestManagment() {
   const deleteGuest = ( async (id)=>{
      try{
       const token = localStorage.getItem("token");
-      const deletedguest = await axios.delete(`http://localhost:5000/api/guests/${id}`,
+      const deletedguest = await axios.delete(`https://event-planner-backend-mu.vercel.app/api/guests/${id}`,
             {
                 headers: {
                 Authorization: `Bearer ${token}`
