@@ -60,7 +60,7 @@ function CreateBudget() {
      const onSubmit = async (data) => {
        try {
          const token = localStorage.getItem('token')
-         await axios.post('http://localhost:5000/api/budgets', data,
+         await axios.post('https://event-planner-backend-mu.vercel.app/api/budgets', data,
             {
                 headers: {
                     Authorization: `bearer ${token}`
