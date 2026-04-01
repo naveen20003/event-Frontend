@@ -46,7 +46,7 @@ useEffect(() => {
   const fetchEvents = async () => {
      try {
       const token = localStorage.getItem('token')
-      const readevents = await axios.get(`http://localhost:5000/api/events/readevents`,{
+      const readevents = await axios.get(`https://event-planner-backend-mu.vercel.app/api/events/readevents`,{
         headers: {
           Authorization: `bearer ${token}`
         }
@@ -63,7 +63,7 @@ useEffect(() => {
   const fetchTasks = async () => {
        try {
         const token = localStorage.getItem('token')
-        const readtasks = await axios.get(`http://localhost:5000/api/tasks/readtask`,{
+        const readtasks = await axios.get(`https://event-planner-backend-mu.vercel.app/api/tasks/readtask`,{
           headers: {
             Authorization: `bearer ${token}`
           }
@@ -80,7 +80,7 @@ useEffect(() => {
   const fetchGuests = async () => {
       try {
         const token = localStorage.getItem('token')
-         const readguests = await axios.get('http://localhost:5000/api/guests',{
+         const readguests = await axios.get('https://event-planner-backend-mu.vercel.app/api/guests',{
            headers: {
             Authorization: `bearer ${token}`
            }
@@ -97,7 +97,7 @@ useEffect(() => {
  const fetchbudget = async () => {
    try {
       const token = localStorage.getItem('token')
-      const readbudget = await axios.get('http://localhost:5000/api/budgets', {
+      const readbudget = await axios.get('https://event-planner-backend-mu.vercel.app/api/budgets', {
         headers: {
           Authorization: `bearer ${token}`
         }
