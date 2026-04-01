@@ -57,7 +57,7 @@ function CreateGuest() {
      const onSubmit = async (data) => {
        try {
         const token = localStorage.getItem("token");
-         await axios.post("http://localhost:5000/api/guests", data,
+         await axios.post("https://event-planner-backend-mu.vercel.app/api/guests", data,
             {
                 headers: {
                 Authorization: `Bearer ${token}`
