@@ -53,7 +53,7 @@ function Login() {
              });
              const onSubmit = async (data) => {
               try {
-                        const response = await axios.post('http://localhost:5000/api/users/login', data);
+                        const response = await axios.post('https://event-planner-backend-mu.vercel.app/api/users/login', data);
                         localStorage.setItem("token", response.data.token);
                         localStorage.getItem("token")
                         console.log(response.data)
