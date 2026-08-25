@@ -63,6 +63,9 @@ function Login() {
                  if (error.response) {
                     alert(error.response.data.message);
                  }
+                console.log("LOGIN ERROR:", error);
+                console.log("STATUS:", error.response?.status);
+                console.log("DATA:", error.response?.data);
                  console.error(error);
               }
              }
