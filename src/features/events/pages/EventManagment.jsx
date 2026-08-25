@@ -184,10 +184,10 @@ console.log(sort);
                                   <EditIcon />
                                       Edit
                              </DropdownMenuItem>
-                             <DropdownMenuItem onClick={()=> navigate(`/Inviteguest/${s._id}`)}>
+                             {/* <DropdownMenuItem onClick={()=> navigate(`/Inviteguest/${s._id}`)}>
                                   <ShareIcon />
                                       share
-                             </DropdownMenuItem>
+                             </DropdownMenuItem> */}
                               <DropdownMenuSeparator />
                               <DropdownMenuItem variant="destructive" onClick={() => deleteEvents(s._id)}>
                                   <DeleteIcon />
