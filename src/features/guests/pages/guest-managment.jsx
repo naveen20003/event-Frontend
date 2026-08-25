@@ -106,10 +106,10 @@ function GuestManagment() {
                           <EditIcon />
                           Edit
                         </DropdownMenuItem>
-                        <DropdownMenuItem>
+                        {/* <DropdownMenuItem>
                           <ShareIcon />
                             Share
-                        </DropdownMenuItem>
+                        </DropdownMenuItem> */}
                         <DropdownMenuSeparator />
                         <DropdownMenuItem variant="destructive" onClick={() => deleteGuest(g._id)}>
                           <DeleteIcon />
