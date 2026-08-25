@@ -205,9 +205,9 @@ const taskprogress = tasklength === 0 ? 0 : Math.round((completedtask / taskleng
               <Progress value={taskprogress}  />
             </Field>
           </div>
-        <div className='sm:col-span-2 border shadow-lg'>
+        {/* <div className='sm:col-span-2 border shadow-lg'>
            <h1 >naveen</h1>
-        </div>
+        </div> */}
      </div>
     </>
   )
