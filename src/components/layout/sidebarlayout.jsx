@@ -116,15 +116,15 @@ function SidebarLayout() {
             <Link to="/Budgeting"className='flex gap-2'>
                <BudgetIcon />
                <span className='flex items-center'> BudgetManagment </span>
-            </Link>
+            {/* </Link>
             <Share/>
-            </div>
+            </div> */}
             </SidebarGroup>
         </SidebarContent>
 
-        <SidebarFooter>
+        {/* <SidebarFooter>
           Footer
-        </SidebarFooter>
+        </SidebarFooter> */}
       </Sidebar>
 
       <SidebarInset>
