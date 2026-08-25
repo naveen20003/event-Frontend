@@ -135,7 +135,7 @@ function Home() {
  const navigate = useNavigate();
 
   return (
-    <div className="sm:p-5 relative">
+    <div className="sm:p-5 relative overflow-x-hidden">
       <div className="w-full h-[700px] p-4 grid grid-cols-1 sm:grid-cols-2 sm:h-[500px] ">
         <div className="border bg-gray text-xm p-3 font-bold rounded-md text-gray-700 grid grid-cols-1 gap-10 shadow">
           <div className="w-full h-full flex justify-center items-center ml-4 sm:justify-start items-end mr-20 md:mr-40">
