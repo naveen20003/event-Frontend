@@ -108,10 +108,10 @@ function Budegting() {
                           <EditIcon />
                           Edit
                         </DropdownMenuItem>
-                        <DropdownMenuItem>
+                        {/* <DropdownMenuItem>
                           <ShareIcon />
                             Share
-                        </DropdownMenuItem>
+                        </DropdownMenuItem> */}
                         <DropdownMenuSeparator />
                         <DropdownMenuItem variant="destructive" onClick={() => deleteBudget(b._id)}>
                           <DeleteIcon />
