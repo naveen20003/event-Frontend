@@ -24,7 +24,6 @@ import Share from '@/features/share/pages/share';
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarGroup,
   SidebarHeader,
   SidebarInset,
@@ -116,9 +115,9 @@ function SidebarLayout() {
             <Link to="/Budgeting"className='flex gap-2'>
                <BudgetIcon />
                <span className='flex items-center'> BudgetManagment </span>
-            {/* </Link>
-            <Share/>
-            </div> */}
+             </Link>
+            {/* <Share/> */}
+            </div> 
             </SidebarGroup>
         </SidebarContent>
 
